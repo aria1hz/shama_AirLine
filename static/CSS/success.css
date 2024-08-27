@@ -1,0 +1,109 @@
+* {
+    margin:0;
+    padding:0;
+}
+body{
+    /* z-index: 1; */
+    background-color: black;
+}
+.Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(117, 117, 117);
+}
+
+.Nav_Items{
+    display: flex;
+    justify-content: left;
+    /* align-items: center; */
+    padding-left:30px ;
+    column-gap: 50px;
+    list-style: none; 
+}
+
+.Nav_Items a{
+    color: white;
+    width: 100px;
+    height: 100px;
+    font-size: large;
+}
+
+.Nav_Items a:hover{
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+    transition: 0.4s;
+    text-decoration: underline;
+}
+
+
+.nav_logo{
+    width: 70px;
+    height: 70px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    background-image: url(https://imageworksllc.com/wp-content/uploads/2019/01/Depositphotos_26569863_m-2015.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.Card{
+    margin-top: 70px;
+    width: 1000px;
+    height: 260px;
+    border: white 2px solid;
+    border-radius: 10px;
+    
+}
+.Card h1{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+
+
+.footer{
+    background-color: black;
+    height: 150px;
+    display: flex;
+    justify-content: right;
+}
+
+
+.footer img{
+    width: 200px ;
+    height: 200px ;
+    position: absolute;
+    margin-right: 1100px;
+}
+
+.float h4{
+    margin-right: 30px;
+    margin-top: 70px;
+}
+.about{
+    color: white;
+    text-decoration: none;
+}
+
+.contact_us{
+    color: white;
+    text-decoration: none;
+    margin-left: 80px;
+    margin-right: 50px;
+}
+
+.ending{
+    background-color: black;
+    display: flex;
+    height: 100px;
+    column-gap: 30px;
+    align-items: center;
+    padding-left: 70px;
+}

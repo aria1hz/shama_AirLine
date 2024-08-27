@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: DrSugiyama-Regular
+font link: https://fonts.google.com/specimen/Dr+Sugiyama
+font author: Sudtipos
+font author site: https://www.sudtipos.com/
+
+
+icon designer: Icons By Alfredo
+icon designer link: /AlfredoCreates
+        
+
+fontColor: {"hex":"#90185D"}
+bgColor: {"hex":"#000000"}
+iconColor: {"hex":"#90185D"}
+
+      

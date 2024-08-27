@@ -1,0 +1,15 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: KaushanScript-Regular
+font link: https://fonts.google.com/specimen/Kaushan+Script
+font author: Impallari Type
+font author site: www.impallari.com
+Slogan Font: Neuton-Extralight.ttf
+
+
+fontColor: {"hex":"#E8E8E8"}
+bgColor: {"gradient-0":"#000000","gradient-1":"#000000"}
+
+sloganColor: {"hex":"#ffffff"}
+      

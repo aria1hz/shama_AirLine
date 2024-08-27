@@ -1,0 +1,140 @@
+* {
+    margin:0;
+    padding:0;
+}
+body{
+    /* z-index: 1; */
+    background-color: black;
+}
+.Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(117, 117, 117);
+}
+
+.Nav_Items{
+    display: flex;
+    justify-content: left;
+    /* align-items: center; */
+    padding-left:30px ;
+    column-gap: 50px;
+    list-style: none; 
+}
+
+.Nav_Items a{
+    color: white;
+    width: 100px;
+    height: 100px;
+    font-size: large;
+}
+
+.Nav_Items a:hover{
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+    transition: 0.4s;
+    text-decoration: underline;
+}
+
+
+.nav_logo{
+    width: 70px;
+    height: 70px;
+}
+.main{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/039/864/822/non_2x/black-abstract-background-with-flowing-patterns-dark-tones-illustration-vector.jpg);
+    height: 870px;
+    display: flex;
+    justify-content: center;
+}
+
+.login_box{
+    margin-top: 30px;
+    width: 525px;
+    height: 825px;
+    border: white 2px solid;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://e0.pxfuel.com/wallpapers/350/265/desktop-wallpaper-dark-abstract-black-minimal-2160x3840-dark.jpg);
+}
+
+.form{
+    color:  white;
+    text-align: center;
+}
+
+
+.User{
+    width: 85%;
+    height: 50px;
+    border-radius: 9px;
+    border-style: double;
+}
+
+.Pas{
+    width: 85%;
+    height: 50px;
+    border-radius: 9px;
+    border-style: double;
+}
+.Email{
+    width: 85%;
+    height: 50px;
+    border-radius: 9px;
+    border-style: double;
+}
+.submit{
+    background-color: black;
+    color: white;
+    width:160px ;
+    height: 60px;
+    border-radius: 10px;
+    border-style: double;
+}
+
+
+
+.footer{
+    background-color: black;
+    height: 150px;
+    display: flex;
+    justify-content: right;
+}
+
+
+.footer img{
+    width: 200px ;
+    height: 200px ;
+    position: absolute;
+    margin-right: 1100px;
+}
+
+.float h4{
+    margin-right: 30px;
+    margin-top: 70px;
+}
+.about{
+    color: white;
+    text-decoration: none;
+}
+
+.contact_us{
+    color: white;
+    text-decoration: none;
+    margin-left: 80px;
+    margin-right: 50px;
+}
+
+.ending{
+    background-color: black;
+    display: flex;
+    height: 100px;
+    column-gap: 30px;
+    align-items: center;
+    padding-left: 70px;
+}

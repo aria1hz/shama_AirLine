@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/CSS/Viza.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Shama_Viza</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="Nav">
+                <ul class="Nav_Items">
+                    <li>
+                        <i style="color: white;" class="bi bi-person-circle h3"></i><a style="text-decoration: none; color:white" href="{% url 'account:login' %}"> ورود  یا ثبت نام</a>
+                    </li>
+                    <li>
+                        <i style="color: white;" class="bi bi-people-fill h3"></i><a style="text-decoration: none; color:white" href="{% url 'contactus:contactus' %}"> پشتیبانی آنلاین</a>
+                    </li>
+                    <li>
+                        <i style="color: white;" class="bi bi-houses h3"></i><a style="text-decoration: none; color:white" href="{% url 'home:home' %}"> صفحه اصلی</a>
+                    </li>
+                </ul>
+                <img class="nav_logo" src="/static/Images/default-AnyEraser.png" alt="">
+            </div>
+        </nav>
+        <div class="Hero">
+            <img class="hero_pic" src="/static/Images/cover.png" alt="">
+        </div>
+    </header>
+    <div class="Hero">
+        <h1>ویزای سفر</h1>
+    </div>
+    <section class="main">
+        {% for viza in viza_items %}
+        <div class="Item_box">
+            <img src="{{viza.img.url}}" alt="">
+            <h4>{{viza.title}}</h4>
+            <p>{{viza.pm}}</p>
+            <hr style="color: white;">
+            <a href="{% url 'viza:single_viza' slug=viza.slug %}">{{viza.price}}$</a>
+        </div>
+        {% endfor %}
+    </section>
+    <!-- <div class="pagination">
+        {% if page_obj.has_previous %}
+        <a href="/viza/?page={{page_obj.previous_page_number}}" class="prev"><i class="mdi mdi-chevron-double-right"></i></a>
+        {% endif %}
+        {% for page in paginator.page_range %}
+        <a href="/viza/?page={{page}}" {% if page == page_obj.number %} class="active-page"{% endif %}>{{page}}</a>
+        {% endfor %}
+        {% if page_obj.has_next %}
+        <a href="/viza/?page={{page_obj.next_page_number}}" class="next"><i class="mdi mdi-chevron-double-left"></i></a>
+        {% endif %}
+      </div> -->
+    <section class="main2">
+        <h3>ویزا چیست؟</h3>
+        <img src="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148616611.jpg?semt=ais_hybrid" alt="">
+        <p>گر عازم سفر خارجی باشید، حتما با ویزا سروکار خواهید داشت. ما اینجا درباره این صحبت می‌کنیم که ویزا دقیقا چیست و چرا برای سفر به کشورهای خارجی باید آن را درخواست کرد؟
+            برای پاسخ به سوال «ویزا چیست؟» و فهم بهتر آن با یک مثال پیش می‌رویم. تصور کنید می‌خواهید به خانه کسی بروید. در قدم اول چه کار می‌کنید؟ طبیعتا از صاحب‌خانه اجازه می‌گیرید؛ چون ورود به هر خانه‌ای، بدون اجازه صاحب‌خانه‌اش ممکن نیست. ویزا هم به‌نوعی اجازه صاحب‌خانه محسوب می‌شود.</p>
+        <p>ویزا یک مجوز است؛ مجوزی برای سفر به کشورهای خارجی. هر مسافری که بخواهد به کشوری خارجی سفر کند، در وهله اول باید از آن کشور اجازه بگیرد؛ یعنی به سفارت‌خانه کشور مقصدش مراجعه و درخواست ویزای آنجا را می‌کند.
+            اگر شما هم قصد سفر به کشورهای خارجی را دارید و می‌خواهید اطلاعات بیشتری درباره آن کسب کنید، این مطلب را تا انتها بخوانید.</p>
+    </section>
+    <section class="main3">
+        <h3>هزینه گرفتن ویزا</h3>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/020/649/670/small/visa-icon-document-illustration-sign-passport-symbol-or-logo-vector.jpg" alt="">
+        <p>برای هزینه ویزا نمی‌شود مبلغ و تعرفه خاصی مشخص کرد. دلایل زیادی هم برای این موضوع وجود دارد:</p>
+        <p>دلیل اول: ویزا انواع و اقسام متنوعی دارد که در ادامه به آن اشاره خواهیم کرد؛ مثل ویزای توریستی، ویزای کار، ویزای درمانی، ویزای تحصیلی و... . طبیعتا هر کدام از آن‌ها هم تعرفه خاص و متفاوت خودشان را دارند؛ بنابراین اگر می‌خواهید از قیمت ویزا سردربیاورید، ابتدا باید نوع ویزای موردنیازتان را مشخص کنید.</p>
+        <p>دلیل دوم: هزینه ویزای هر کشوری متفاوت از کشور دیگر است؛ پس نمی‌توان یک مبلغ کلی برای آن ارائه داد.  نواسات نرخ ارز هم خودش نکته مهمی است. همان طور که می‌دانید، نرخ ارز به‌صورت روزانه و لحظه‌ای تغییر می‌کند؛ همین هم باعث می‌شود که نتوان برای ویزا، یک هزینه دقیق ریالی در نظر گرفت. در نهایت اگر درباره هزینه گرفتن ویزا سوال دارید، پیشنهاد می‌کنیم با شماره 43900880-021 تماس بگیرید.</p>
+    </section>
+    <section class="main4">
+        <h3>انواع ویزا</h3>
+        <p>همان طور که گفتیم، ویزا انواع مختلفی دارد که در ادامه با آن‌ها آشنا خواهیم شد:</p>
+        <p>ویزای ترانزیت: نوعی ویزای کوتاه‌مدت است. اگر پرواز مسافر ترانزیت‌دار باشد، یعنی باید چند ساعتی را در یک کشور میانی، منتظر پرواز بعدی‌اش بشود. ویزای ترانسفر، مجوزی برای حضور چندساعته در این کشور میانی است.</p>
+        <p>ویزای توریستی: همان طور که از اسمش هم معلوم است، مجوزی برای یک سفر توریستی کوتاه‌مدت است مجوزی برای گشت‌وگذار در سطح کشور و دیدن جاذبه‌های گردشگری. صاحب ویزای توریستی، اجازه کار یا اقامت ندارد.</p>
+        <p>ویزای کار: این ویزا مناسب مسافرانی است که برای پیداکردن کار، به یک کشور سفر می‌کنند.</p>
+        <p>ویزای درمانی: این ویزا مخصوص بیمارانی است که قصد دارند با هدف درمان سفر کنند. ویزای درمانی فقط در شرایطی صادر می‌شود که مدارک پزشکی بیمار، طبق شرایط اخذ ویزای درمانی باشد.</p>
+        <p>ویزای تحصیلی: این ویزا به‌نوعی ویزای اقامت کوتاه‌مدت محسوب می‌شود؛ اقامتی که هدف آن تحصیل است.</p>
+        
+
+    </section>
+
+
+
+    <section class="footer">
+        <img src="/static/Images/default-AnyEraser.png" alt="">
+        <div class="float">
+            <h4 style="color: white;">تلفن پشتیبانی:09140000000</h4>
+            <a class="about" style="text-decoration: none; color:white" href="{% url 'aboutus:aboutus' %}">درباره ما</a>
+            <a class="contact_us" style="text-decoration: none; color:white" href="{% url 'contactus:contactus' %}">تماس با ما</a>
+        </div>
+    </section>
+    <div class="ending">
+        <i style="color: white;" class="bi bi-instagram h3"></i>
+        <i style="color: white;" class="bi bi-telegram h3"></i>
+        <i style="color: white;" class="bi bi-twitter-x h3"></i>
+        <i style="color: white;" class="bi bi-youtube h3"></i>
+        <hr style="color: white;">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+* {
+    margin:0;
+    padding:0;
+}
+body{
+    /* z-index: 1; */
+    background-color: black;
+}
+.Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(117, 117, 117);
+}
+
+.Nav_Items{
+    display: flex;
+    justify-content: left;
+    /* align-items: center; */
+    padding-left:30px ;
+    column-gap: 50px;
+    list-style: none; 
+}
+
+.Nav_Items a{
+    color: white;
+    width: 100px;
+    height: 100px;
+    font-size: large;
+}
+
+.Nav_Items a:hover{
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+    transition: 0.4s;
+    text-decoration: underline;
+}
+
+
+.nav_logo{
+    width: 70px;
+    height: 70px;
+}
+
+.layer{
+    background-color: black;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    margin-top: 90px;
+    border: white 1px solid;
+    width: 1198px;
+    height: 125px;
+    border-radius: 30px;
+    background-color:  rgb(117, 117, 117);
+}
+
+.box h1{
+    color: white;
+    text-align: center;
+}
+.box h2{
+    color: white;
+    text-align: center;
+}
+
+.main{
+    background-color: black;
+    height: 400px;
+    display: block;
+}
+
+.title{
+    margin-right: 30px;
+    color: white;
+    text-align: right;
+}
+
+.main p {
+    margin-right: 30px;
+    color: white;
+    text-align: right;
+}
+
+.main2{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/039/864/822/non_2x/black-abstract-background-with-flowing-patterns-dark-tones-illustration-vector.jpg);
+    height: 600px;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    column-gap: 50px;
+  }
+  .grid-container p{
+    color: white;
+    text-align: right;
+}
+
+.grid-container h3{
+    color: white;
+    text-align: right;
+}
+
+.footer{
+    background-color: black;
+    height: 150px;
+    display: flex;
+    justify-content: right;
+}
+
+
+.footer img{
+    width: 200px ;
+    height: 200px ;
+    position: absolute;
+    margin-right: 1100px;
+}
+
+.float h4{
+    margin-right: 30px;
+    margin-top: 70px;
+}
+.about{
+    color: white;
+    text-decoration: none;
+}
+
+.contact_us{
+    color: white;
+    text-decoration: none;
+    margin-left: 80px;
+    margin-right: 50px;
+}
+
+.ending{
+    background-color: black;
+    display: flex;
+    height: 100px;
+    column-gap: 30px;
+    align-items: center;
+    padding-left: 70px;
+}

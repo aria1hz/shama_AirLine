@@ -1,0 +1,275 @@
+* {
+    margin:0;
+    padding:0;
+}
+body{
+    /* z-index: 1; */
+    background-color: black;
+}
+.Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(117, 117, 117);
+}
+
+.Nav_Items{
+    display: flex;
+    justify-content: left;
+    /* align-items: center; */
+    padding-left:30px ;
+    column-gap: 50px;
+    list-style: none; 
+}
+
+.Nav_Items a{
+    color: white;
+    width: 100px;
+    height: 100px;
+    font-size: large;
+}
+
+.Nav_Items a:hover{
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+    transition: 0.4s;
+    text-decoration: underline;
+}
+
+
+.nav_logo{
+    width: 70px;
+    height: 70px;
+}
+
+.hero_pic{
+    z-index: 1;
+    width: 100%;
+    height: 500px;
+}
+.Hero{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.Hero h1{
+    color: white;
+}
+.Card{
+    background-color: black;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.card_box{
+    border: white 2px solid;
+    border-radius: 10px;
+    width:1200px ;
+    height: 200px;
+}
+.card_box img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-left: 550px;
+}
+.card_box h2{
+    color: white;
+    text-align: center;
+}
+
+.card_box p{
+    color: white;
+    text-align: center;
+}
+
+.main{
+    background-color: black;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.cards{
+    width: 500px;
+    height: 150px;
+    border: white 2px solid;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.cards i{
+    margin-left: 230px;
+}
+.cards h3{
+    color: white;
+    text-align: center;
+}
+.cards p{
+    color: white;
+    text-align: center;
+}
+
+.PM{
+    background-color: black;
+    display: flex;
+    justify-content: right;
+}
+.PM h2{
+    color: white;
+    margin-right: 30px;
+}
+
+.main2{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.detailbox{
+    border: white 2px solid;
+    border-radius: 10px;
+    width: 1000px;
+    height: 250px;
+    /* justify-content: center; */
+    /* display: flex; */
+}
+.detailbox p {
+    color: white;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.littlebox{
+    margin-left: 100px;
+    border: white 2px solid;
+    border-radius: 10px;
+    width: 800px ;
+    height: 125px;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+}
+.main3{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.detailbox2{
+    border: white 2px solid;
+    border-radius: 10px;
+    width: 1000px;
+    height: 650px;
+    text-align: right;
+}
+.detailbox2 h3{
+    color: white;
+    margin-right: 30px;
+}
+
+.detailbox2 p{
+    color: white;
+    margin-right: 30px;
+}
+.detailbox2 i{
+    color: white;
+    margin-right: 20px;
+}
+
+/* 0000000000000000000000000000 */
+.main4{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.detailbox3{
+    border: white 2px solid;
+    border-radius: 10px;
+    width: 1000px;
+    height: 850px;
+    text-align: right;
+}
+.detailbox3 h3{
+    color: white;
+    margin-right: 30px;
+}
+
+.detailbox3 p{
+    color: white;
+    margin-right: 30px;
+}
+.detailbox3 i{
+    color: white;
+    margin-right: 20px;
+}
+/* 0000000000000000000000000000 */
+.Viza_request{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    height: 300px;
+    padding-top: 50px;
+}
+
+.Viza_Box{
+    border: white 2px solid;
+    border-radius: 10px;
+    width: 1000px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+}
+
+.Viza_Box input{
+    margin-top: 20px;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    border-style: double;
+}
+.btnn{
+    background: rgb(117, 117, 117) ;
+    border-style: double;
+}
+.footer{
+    background-color: black;
+    height: 150px;
+    display: flex;
+    justify-content: right;
+}
+
+
+.footer img{
+    width: 200px ;
+    height: 200px ;
+    position: absolute;
+    margin-right: 1100px;
+}
+
+.float h4{
+    margin-right: 30px;
+    margin-top: 70px;
+}
+.about{
+    color: white;
+    text-decoration: none;
+}
+
+.contact_us{
+    color: white;
+    text-decoration: none;
+    margin-left: 80px;
+    margin-right: 50px;
+}
+
+.ending{
+    background-color: black;
+    display: flex;
+    height: 100px;
+    column-gap: 30px;
+    align-items: center;
+    padding-left: 70px;
+}
