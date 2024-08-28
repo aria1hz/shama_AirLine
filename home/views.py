@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from.models import Bus
 from account.models import User
+from persiantools.jdatetime import JalaliDate
 
 
 
@@ -13,14 +14,15 @@ def ticket(request):
     data=Bus.objects.all()
     startt=request.GET.get("startt")
     endd=request.GET.get("endd")
-    # movee=request.GET.get("movee")
+    movee=request.GET.get("movee")
     
     if startt !='' and startt is not None:
         data=data.filter(start__icontains=startt)
     if endd !='' and endd is not None:
         data=data.filter(end__icontains=endd)
-    # if movee !='' and movee is not None:
-    #     data=data.filter(movetime__icontains=movee)
+    if movee !='' and movee is JalaliDate:
+        movee = JalaliDate.to_gregorian()
+        data=data.filter(movetime__icontains=movee)
     if endd =='' :
         return render(request,"home/index.html")
     if startt =='' :
