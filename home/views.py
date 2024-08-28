@@ -1,12 +1,14 @@
 from django.shortcuts import render,redirect
-from .models import Bus
-
+from.models import Bus
+from account.models import User
 
 
 
 def home(request):
     return render(request,"home/index.html")
-        
+def loged(request):
+    # namesss=User.objects.all()
+    return render(request,"home/loged.html")
 def ticket(request):
     data=Bus.objects.all()
     startt=request.GET.get("startt")

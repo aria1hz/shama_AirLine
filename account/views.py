@@ -6,6 +6,8 @@ from django.contrib.auth import login,logout
 from django.utils.crypto import get_random_string
 
 def login_page(request):
+    if request.user.is_authenticated:
+        return redirect(reverse('home:loged'))
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
@@ -15,7 +17,7 @@ def login_page(request):
             check_password = user.check_password(user_pass)
             if check_password:
                 login(request,user)
-                return redirect(reverse('home:home'))
+                return redirect(reverse('home:loged'))
             else:
                 print('error')
         
@@ -42,7 +44,7 @@ def register(request):
                 new_user.email_active_code=get_random_string(100)
                 new_user.save()
                 return redirect(reverse('account:login'))
-            #bara in ye page besaz Ke bege email khod ra check namayid
+            
         else:
             return render(request,"account/signup.html", {'form' : form} )
     return render(request,"account/signup.html", {'form' : RegisterForm} )

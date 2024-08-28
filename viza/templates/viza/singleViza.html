@@ -14,7 +14,7 @@
             <div class="Nav">
                 <ul class="Nav_Items">
                     <li>
-                        <i style="color: white;" class="bi bi-person-circle h3"></i><a style="text-decoration: none; color:white" href="{% url 'account:login' %}"> ورود  یا ثبت نام</a>
+                        <i style="color: white;" class="bi bi-person-circle h3"></i><a style="text-decoration: none; color:white" href="{% url 'account:login' %}">{{user.username}}</a>
                     </li>
                     <li>
                         <i style="color: white;" class="bi bi-people-fill h3"></i><a style="text-decoration: none; color:white" href="{% url 'contactus:contactus' %}"> پشتیبانی آنلاین</a>
